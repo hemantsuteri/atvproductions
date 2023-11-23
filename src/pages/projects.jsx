@@ -4,6 +4,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
+import Image from "./projectdata";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -58,58 +59,24 @@ const Projects = () => {
           <div className="video-section">
             <h2>Featured Videos</h2>
             <div className="video-grid">
-              {/* Video 1 */}
-              <div className="video-thumbnail">
-                <a href="https://drive.google.com/file/d/1tj6n6WIMIfaXpRDcVWmG3HPdEMQReoM5/view?usp=drive_link
-" target="_blank" rel="noopener noreferrer">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uZikhae6-JsU0rKICtG_FHx0G5YBUJ_vL5DM5iQ4QbwwZ4qBAUK4j3QJBKxpH41I1y0&usqp=CAU
-				  " alt="Video 1" />
+            {
+              Image.map((photo) =>{
+                const {image, link, index} = photo;
+                console.log(image);
+                {/* console.log(link); */}
+                return(
+                  <>
+                <div key={index} className="video-thumbnail">
+                <a href="{link}" target="_blank">
+                  {/* <img src={image} alt="image" /> */}
+                  <img src="/public/1.png" alt="image" />
                 </a>
-              </div>
-
-              {/* Video 2 */}
-              <div className="video-thumbnail">
-                <a href="https://drive.google.com/file/d/1VjkhmcjyTEOgjAj9G0y3L8cPN4djTfBT/view?usp=sharing
-" target="_blank" rel="noopener noreferrer">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uZikhae6-JsU0rKICtG_FHx0G5YBUJ_vL5DM5iQ4QbwwZ4qBAUK4j3QJBKxpH41I1y0&usqp=CAU
-" alt="Video 2" />
-                </a>
-              </div>
-
-              {/* Video 3 */}
-              <div className="video-thumbnail">
-                <a href="https://drive.google.com/file/d/1nqUqiuPOBUVnPMTMp2D_XpBtBbqFAh6x/view?usp=sharing
-" target="_blank" rel="noopener noreferrer">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uZikhae6-JsU0rKICtG_FHx0G5YBUJ_vL5DM5iQ4QbwwZ4qBAUK4j3QJBKxpH41I1y0&usqp=CAU
-" alt="Video 3" />
-                </a>
-              </div>
-
-              {/* Video 4 */}
-              <div className="video-thumbnail">
-                <a href="https://drive.google.com/file/d/1cnqmlmwgy0jfo9S9b7QkPme-Ru-4umJp/view?usp=sharing
-" target="_blank" rel="noopener noreferrer">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uZikhae6-JsU0rKICtG_FHx0G5YBUJ_vL5DM5iQ4QbwwZ4qBAUK4j3QJBKxpH41I1y0&usqp=CAU
-" alt="Video 4" />
-                </a>
-              </div>
-
-              {/* Video 5 */}
-              <div className="video-thumbnail">
-                <a href="https://drive.google.com/file/d/11-IAxPqRrlMI-etitu_qi8oGVL2PFe6b/view?usp=sharing
-" target="_blank" rel="noopener noreferrer">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uZikhae6-JsU0rKICtG_FHx0G5YBUJ_vL5DM5iQ4QbwwZ4qBAUK4j3QJBKxpH41I1y0&usqp=CAU
-" alt="Video 5" />
-                </a>
-              </div>
-
-              {/* Video 6 */}
-              <div className="video-thumbnail">
-                <a href="https://drive.google.com/file/d/19t3R-n9fyccqcypYGG_lFEaRJFzkGffb/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uZikhae6-JsU0rKICtG_FHx0G5YBUJ_vL5DM5iQ4QbwwZ4qBAUK4j3QJBKxpH41I1y0&usqp=CAU
-" alt="Video 6" />
-                </a>
-              </div>
+                </div>
+                </>
+              )}
+            )
+            }
+              {/* earlier location */}
             </div>
           </div>
         </div>
