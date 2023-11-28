@@ -5,6 +5,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
+import SearchExercises from "../components/SearchExercises";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -44,6 +45,10 @@ const Articles = () => {
 							{INFO.articles.title}
 						</div>
 
+						<div>
+						<SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+						</div>
+
 						<div className="subtitle articles-subtitle">
 							{INFO.articles.description}
 						</div>
@@ -55,9 +60,13 @@ const Articles = () => {
 										className="articles-article"
 										key={(index + 1).toString()}
 									>
+									{/* <div className="article-left-side">
+												<img src="course1.png" alt="" />
+											</div> */}
+											
 										<Article
+										
 											key={(index + 1).toString()}
-											date={article().date}
 											title={article().title}
 											description={article().description}
 											link={"/article/" + (index + 1)}

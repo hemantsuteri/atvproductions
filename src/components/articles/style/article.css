@@ -12,6 +12,10 @@
 	min-width: 20%;
 	max-width: 20%;
 }
+/* .article-left-side img{
+	min-width: 20%;
+	max-width: 20%;
+} */
 
 .article-right-side {
 	flex-basis: 80%;

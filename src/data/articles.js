@@ -3,9 +3,10 @@ import React from "react";
 function article_1() {
 	return {
 		date: "7 May 2023",
-		title: "The importance of Video Editing",
+		source: "/public/course1.png",
+		title: "BASIC COURSE",
 		description:
-			"Video content's ubiquity on platforms like Facebook and Instagram emphasizes the need for polished edits. Almost 85% of consumers credit a brand's video for influencing their purchase decisions..",
+			"This is a basic course of video editing, generally preferred for beginners in the field of video editing.",
 		keywords: [
 			"Video Editing", "Post-production", "Content Creation", "Video Marketing"
 		],
@@ -38,10 +39,10 @@ function article_1() {
 
 function article_2() {
 	return {
-		date: "7 May 2023",
-		title: "Video production",
+		src: "/public/course2.png",
+		title: "ADVANCED COURSE",
 		description:
-			"Video production encompasses three crucial stages: Pre-production, Production, and Post-production, with the latter being the editing phase. Video editing is not just important; it's indispensable.",
+			"This is advance course on Video editing, prefferd for those who knows basics of editing already.",
 		style: ``,
 		keywords: [
 			"Film Production",

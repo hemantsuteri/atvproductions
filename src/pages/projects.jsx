@@ -58,12 +58,9 @@ const Projects = () => {
             {
               Image.map((photo) =>{
                 const {image, link, index} = photo;
-                {/* console.log(image); */}
-                {/* console.log(link); */}
                 return(
                 <div key={index} className="video-thumbnail">
                 <a href={link} target="_blank">
-                  {/* <img src={image} alt="image" /> */}
                   <img style={{height:"200px", width:"300px"}} src={image} alt="image" />
                 </a>
                 </div>
