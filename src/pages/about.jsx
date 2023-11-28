@@ -21,7 +21,7 @@ const About = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`About | ${INFO.main.title}`}</title>
+				<title>{`Faculty | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -60,15 +60,18 @@ const About = () => {
 										/>
 									</div>
 								</div> */}
-
-								<div className="about-socials">
-									<Socials />
-								</div>
 							{/* </div> */}
 						</div>
-						<div className="about-socials-mobile">
+						{/* <div className="about-socials-mobile">
 							<Socials />
-						</div>
+						</div> */}
+					</div>
+
+					<div>
+            			<img src="faculty.jpg" alt="Faculty" style={{ width: '100%', height: 'auto' }} />
+          			</div>
+					<div>
+						<Socials />
 					</div>
 					<div className="page-footer">
 						<Footer />
