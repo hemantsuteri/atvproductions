@@ -27,9 +27,9 @@ const INFO = {
 	},
 
 	articles: {
-		title: "Unleashing Creativity: Pushing the Boundaries of Video Editing to Inspire Future Innovators.",
+		title: "WE ARE INTRODUCING YOU THE BEST VIDEO EDITING COURSES.",
 		description:
-			"A Thoughtful Compilation: Journey through the chronicles of my extensive reflections on programming, leadership, product design, and beyond.",
+			"Check out these best courses for video editing here.",
 	},
 
 	// projects: [
