@@ -2,8 +2,9 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		source: "/public/course1.png",
+		// img: "/public/course1.png",
+		img: "https://placekitten.com/300/200",
+		// source: "/public/course1.png",
 		title: "BASIC COURSE",
 		description:
 			"This is a basic course of video editing, generally preferred for beginners in the field of video editing.",
@@ -39,7 +40,8 @@ function article_1() {
 
 function article_2() {
 	return {
-		src: "/public/course2.png",
+		// src: "/public/course2.png",
+		img: "https://placekitten.com/300/200",
 		title: "ADVANCED COURSE",
 		description:
 			"This is advance course on Video editing, prefferd for those who knows basics of editing already.",

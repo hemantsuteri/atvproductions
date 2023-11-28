@@ -10,6 +10,7 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import SearchBox from "../components/searchbox";
+// import Login from "./login";
 
 import "./styles/articles.css";
 
@@ -31,6 +32,11 @@ const Articles = () => {
 				/>
 			</Helmet>
 
+			<div>
+				<button>
+					LogIn/SignUp
+				</button>
+			</div>
 			<div className="page-content">
 				<NavBar active="articles" />
 				<div className="content-wrapper">
@@ -39,6 +45,10 @@ const Articles = () => {
 							<Logo width={46} />
 						</div>
 					</div>
+
+					{/* <div>
+						<a href="/src/components/Login">LogIn/SignUp</a>
+					</div> */}
 
 					<div className="articles-main-container">
 						<div className="title articles-title">
@@ -61,7 +71,7 @@ const Articles = () => {
 										key={(index + 1).toString()}
 									>											
 										<Article
-										
+											img={article().img}
 											key={(index + 1).toString()}
 											title={article().title}
 											description={article().description}
