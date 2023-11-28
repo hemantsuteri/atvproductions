@@ -1,5 +1,15 @@
 import React from "react";
 
+const buttonStyle = {
+	justifyItem: 'center',
+	backgroundColor: 'blue',
+	color: 'white',
+	padding: '10px',
+	borderRadius: '5px',
+	cursor: 'pointer',
+	border: 'none',
+	fontSize: '16px',
+};
 function article_1() {
 	return {
 		img: "https://res.cloudinary.com/duivrjbfz/image/upload/v1701195236/myimages/course1_mkjkvt.png",
@@ -23,14 +33,21 @@ function article_1() {
 				`,
 		body: (
 			<React.Fragment>
-				<div className="article-content">
+			<button style={buttonStyle}>
+				{/* <a href=""> */}
+				<a href="/src/components/Register.jsx">
+				Login to Enroll
+				</a>	
+			</button>
+				{/* <div className="article-content">
 					<div className="paragraph">Content of article 1</div>
 					<img
-						src="https://picsum.photos/200/300"
+						// src="https://picsum.photos/200/300"
+						src="/src/pages/login.jsx"
 						alt="random"
 						className="randImage"
 					/>
-				</div>
+				</div> */}
 			</React.Fragment>
 		),
 	};
@@ -51,7 +68,9 @@ function article_2() {
 		],
 		body: (
 			<React.Fragment>
-				<h1>Content of article 2</h1>
+			<button style={buttonStyle}>
+				Login to Enroll
+			</button>
 			</React.Fragment>
 		),
 	};
