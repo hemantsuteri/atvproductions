@@ -2,7 +2,7 @@ const INFO = {
 	main: {
 		title: "ATV Productions",
 		name: "Aayush Tiwari",
-		email: "mail@aayushfreelancingservice@gmail.com",
+		email: "aayushfreelancingservice@gmail.com",
 		// logo: "../components/img/logo new.png",
 		logo: "../logo.png",
 	},
