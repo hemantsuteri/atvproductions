@@ -5,11 +5,11 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Article from "../components/articles/article";
-import SearchExercises from "../components/SearchExercises";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import myArticles from "../data/articles";
+
+import SearchBox from "../components/searchbox";
 
 import "./styles/articles.css";
 
@@ -46,7 +46,7 @@ const Articles = () => {
 						</div>
 
 						<div>
-						<SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+							<SearchBox />
 						</div>
 
 						<div className="subtitle articles-subtitle">
@@ -59,11 +59,7 @@ const Articles = () => {
 									<div
 										className="articles-article"
 										key={(index + 1).toString()}
-									>
-									{/* <div className="article-left-side">
-												<img src="course1.png" alt="" />
-											</div> */}
-											
+									>											
 										<Article
 										
 											key={(index + 1).toString()}
