@@ -2,7 +2,7 @@ import React from "react";
 
 const buttonStyle = {
 	justifyItem: 'center',
-	backgroundColor: 'blue',
+	backgroundColor: 'yellow',
 	color: 'white',
 	padding: '10px',
 	borderRadius: '5px',
